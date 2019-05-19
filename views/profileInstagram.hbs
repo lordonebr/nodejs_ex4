@@ -1,0 +1,15 @@
+<h1>Olá, {{profile.displayName}} - Você está logado via {{profile.provider}}!</h1>
+<h2><a href="/logout">(Efetuar Logout)</a></h2>
+
+<img src="{{profile._json.data.profile_picture}}" alt="Foto Perfil Instagram" border="2"> 
+<h2>Informações básicas do perfil do Instagram:</h2>
+<dl>
+    <dt><b>Bio</b></dt>
+    <dd>{{profile._json.data.bio}}</dd>
+    <dt><b>Número Publicações</b></dt>
+    <dd>{{profile._json.data.counts.media}}</dd>
+    <dt><b>Número Seguidores</b></dt>
+    <dd>{{profile._json.data.counts.followed_by}}</dd>
+    <dt><b>Número Seguindo</b></dt>
+    <dd>{{profile._json.data.counts.follows}}</dd>
+</dl>
